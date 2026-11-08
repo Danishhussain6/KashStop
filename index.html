@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover Kashmiri saffron, dry fruits, handicrafts and pashmina on KashStop." />
+  <title>KashStop — Discover Kashmir</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">Made in Kashmir · Shop local, support local artisans</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="KashStop home"><span class="brand-mark">K</span><span>KashStop<span class="brand-dot">.</span></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#shop">Shop</a><a href="#story">Our story</a><a href="#vendors">For sellers</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle" aria-label="Focus search">⌕</button>
+      <button class="cart-button" id="cartOpen" aria-label="Open cart">Cart <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy glass-panel">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A little piece of paradise</p>
+        <h1>Bring the beauty<br>of <em>Kashmir</em> home.</h1>
+        <p class="hero-text">Discover carefully selected saffron, orchard-fresh dry fruits and timeless handicrafts from the valley — thoughtfully brought together in one place.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#shop">Explore the collection <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#story">Our story <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-proof"><div class="avatar-stack"><span>✿</span><span>❋</span><span>✦</span></div><span>Celebrating local makers and traditions</span></div>
+      </div>
+      <div class="hero-art photo-card" role="img" aria-label="Snowy mountain valley in Kashmir">
+        <span class="photo-card-caption"><span class="label-dot"></span> THE MAGIC OF THE VALLEY</span>
+      </div>
+      <div class="hero-scroll">SCROLL TO DISCOVER <span>↓</span></div>
+    </section>
+    <section class="trust-strip" aria-label="Store values">
+      <div><span class="trust-icon">✳</span><span><strong>Local finds</strong><small>Made and grown in Kashmir</small></span></div>
+      <div><span class="trust-icon">♡</span><span><strong>People first</strong><small>Supporting small businesses</small></span></div>
+      <div><span class="trust-icon">↗</span><span><strong>Easy ordering</strong><small>Chat directly to order</small></span></div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE SHOP</p><h2>Little treasures, <em>big stories.</em></h2></div>
+        <p>Thoughtful picks from the valley.<br>Find something you’ll love.</p>
+      </div>
+      <div class="shop-tools">
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="All">All products</button>
+          <button class="filter" data-category="Saffron">Saffron</button>
+          <button class="filter" data-category="Dry fruits">Dry fruits</button>
+          <button class="filter" data-category="Crafts">Handicrafts</button>
+          <button class="filter" data-category="Textiles">Textiles</button>
+        </div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products"></label>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No products match that search. Try another term.</p>
+      <p class="demo-note">Demo catalogue · Prices and availability are examples. Confirm details with the seller before paying.</p>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-image"><div class="story-stamp">KASHMIR<br><span>✳</span><br>WITH LOVE</div><div class="story-pattern"></div></div>
+      <div class="story-copy"><p class="eyebrow">ROOTED IN THE VALLEY</p><h2>More than a product.<br><em>A piece of home.</em></h2><p>KashStop is a concept marketplace built to help people discover the products, skills and small businesses that make Kashmir special.</p><p>We want to make it easier for local makers to reach new customers while helping shoppers find thoughtful, locally sourced goods.</p><a class="text-link" href="#vendors">Want to sell with us? <span>→</span></a></div>
+    </section>
+
+    <section class="vendor-section" id="vendors">
+      <div><p class="eyebrow">FOR LOCAL SELLERS</p><h2>Have something<br><em>beautiful to share?</em></h2><p>We’re looking to connect with Kashmiri makers, growers and small businesses.</p></div>
+      <a class="button button-light" id="vendorButton" href="#">Become a seller <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand brand-footer" href="#"><span class="brand-mark">K</span><span>KashStop<span class="brand-dot">.</span></span></a><p>Made with care for Kashmir.</p><span>© <span id="year"></span> KashStop · Demo storefront</span></footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-heading"><div><p class="eyebrow">YOUR BAG</p><h2>Your basket</h2></div><button class="close-button" id="cartClose" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span>♡</span><p>Your basket is waiting for something lovely.</p><button class="text-link" id="continueShopping">Explore products →</button></div>
+    <div class="cart-footer" id="cartFooter" hidden><div class="total-line"><span>Estimated total</span><strong id="cartTotal">₹0</strong></div><p>Shipping and final availability will be confirmed by the seller.</p><button class="button button-dark checkout-button" id="checkoutButton">Order on WhatsApp ↗</button></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
