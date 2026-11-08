@@ -1,32 +1,50 @@
-# KashStop — Kashmir Marketplace Demo
+KashStop — Kashmir Marketplace
 
-A responsive front-end concept for a Kashmir-focused marketplace, refreshed with seven user-provided Kashmir photographs and a frosted-glass / glassmorphism visual style.
+KashStop is a responsive e-commerce marketplace concept designed to showcase local Kashmiri products through a modern and user-friendly shopping experience.
 
-## Run it
+Features:
 
-1. Extract the ZIP.
-2. Open the `KashStop` folder in VS Code.
-3. Open `index.html` in a browser, or use VS Code **Live Server**.
+* Beautiful Kashmir-inspired background images
+* Modern glassmorphism UI design
+* Responsive navigation and product sections
+* Product category filtering and search
+* Interactive shopping cart
+* Cart data saved using browser local storage
+* WhatsApp-based order messaging
+* Responsive design for desktop and mobile devices
 
-No build tools or package installation are required.
+Technologies Used:
+* HTML5
+* CSS3
+* JavaScript
 
-## Included features
+Project Structure:
+KashStop/
+│
+├── assets/
+│   ├── autumn-walkway.jpg
+│   ├── gulmarg-snow-valley.jpg
+│   ├── kashmir-snow-terrace.jpg
+│   ├── kashmir-summer-meadow.jpg
+│   ├── snow-forest-cabin.jpg
+│   └── snowy-mountain-forest.jpg
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
 
-- Kashmir photo backgrounds and visual sections
-- Glass-style navigation, hero panel, product cards and cart drawer
-- Product category filters and search
-- Shopping cart saved in browser local storage
-- WhatsApp order-message generation (requires a real seller number)
-- Responsive mobile and desktop layout
+How to Run:
+1. Clone this repository.
+2. Open the project folder in VS Code.
+3. Open index.html in your browser.
+4. Alternatively, use the Live Server extension in VS Code.
 
-## Before using it with real customers
+Future Improvements:
+* Backend and database integration
+* User authentication
+* Seller dashboard
+* Real product listings
+* Secure online payment integration
 
-- In `script.js`, replace `WHATSAPP_NUMBER` with a real business WhatsApp number (digits only, including country code).
-- Replace demo products, prices and descriptions with accurate listings from sellers who have given permission.
-- The product illustrations are placeholders; add seller-approved product photos.
-- The cart is stored only in the visitor's browser. It does not create a paid order or collect payment.
-- Add a backend/database, seller admin, order records, privacy policy, terms, shipping/returns policy and a secure payment provider before accepting online payments.
-
-## GitHub
-
-Place this folder inside your existing repository, for example `web-dev/Projects/KashStop/`, then commit and push it.
+KashStop — Bringing the beauty of Kashmir to online shopping.
