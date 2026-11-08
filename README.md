@@ -18,22 +18,6 @@ Technologies Used:
 * CSS3
 * JavaScript
 
-Project Structure:
-KashStop/
-│
-├── assets/
-│   ├── autumn-walkway.jpg
-│   ├── gulmarg-snow-valley.jpg
-│   ├── kashmir-snow-terrace.jpg
-│   ├── kashmir-summer-meadow.jpg
-│   ├── snow-forest-cabin.jpg
-│   └── snowy-mountain-forest.jpg
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-
 How to Run:
 1. Clone this repository.
 2. Open the project folder in VS Code.
